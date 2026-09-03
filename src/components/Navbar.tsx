@@ -11,7 +11,6 @@ const Navbar = () => {
   return (
     <Container maxW={"1200px"}>
       <Box
-        px={4}
         my={2}
         borderRadius={50}
         bg={useColorModeValue("gray.200", "gray.700")}
@@ -28,6 +27,9 @@ const Navbar = () => {
             <Box
               px={4}
               my={4}
+              h={"16"}
+              alignContent={"center"}
+              justifyContent={"center"}
               borderLeftRadius={50}
               bg={useColorModeValue("pink.200", "pink.200")}
             >
@@ -45,7 +47,7 @@ const Navbar = () => {
             {/* <img src="/explode.png" alt="Explode head" width={45} height={45} /> */}
           </Flex>
           {/* Right side */}
-          <Flex gap={3} alignItems={"center"}>
+          <Flex gap={3} alignItems={"center"} px={29}>
             <FaMagnifyingGlass />
             <IoMdPerson />
             <Text
